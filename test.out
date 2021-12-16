@@ -1,0 +1,3 @@
+g++ -O2 -I/root/srilm-1.5.10/include -Iinc -g -rdynamic -c src/mydisambig.cpp
+Makefile:23: recipe for target 'mydisambig.o' failed
+make: *** [mydisambig.o] Interrupt

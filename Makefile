@@ -25,8 +25,10 @@ $(TARGET): $(OBJ) -loolm -ldstruct -lmisc
 all: $(TARGET)
 
 map:
-	@#TODO
-	@#python3 $(SRC_PATH)/mapping.py $(FROM) $(TO)
+	python3 $(SRC_PATH)/mapping.py $(FROM) $(TO)
+
+run: $(TARGET)
+	./mydisambig test_data/example-separated.txt ZhuYin-Big5.map corpus.model myoutput.txt
 
 clean:
 	$(RM) $(OBJ) $(TARGET)

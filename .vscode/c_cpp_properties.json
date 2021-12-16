@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/srilm-1.5.10/**"
+            ]
+        }
+    ],
+    "version": 4
+}
